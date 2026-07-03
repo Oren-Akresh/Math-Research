@@ -36,7 +36,7 @@ w[8][5,6] = -1
 # single check
 
 for i in range(1, 9):
-    for j in range(1, 8):
+    for j in range(1, 9):
         x_wi = bracket(x, w[i])
         x_wj = bracket(x, w[j])
 
