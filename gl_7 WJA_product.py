@@ -11,7 +11,7 @@ x = np.zeros((7,7), dtype=int)
 x[2,1] = 1
 x[3,2] = 1
 x[5,4] = 1
-x[6,5] = 11
+x[6,5] = 1
 
 w = {i : np.zeros((7,7), dtype=int) for i in range(1, 9)}
 w[1][0,3] = 1
@@ -62,7 +62,6 @@ for i in range(1, 9):
             terms = [] 
             for idx, c in enumerate(coeffs):
                 if c != 0:
-                    display_coeff = f"-{1 if c==4 else ''}" if c ==4 else f"{c}*"
                     if c==4:
                         terms.append(f"-omega_{idx+1}")
                     else:
